@@ -19,4 +19,24 @@ public class StudentServiceimpl implements StudentService {
 		return studentRepo.findAll();
 	}
 
+	@Override
+	public void savestudent(Student student) {
+		// TODO Auto-generated method stub
+		studentRepo.save(student);
+	}
+
+	@Override
+	public void deletetudent(Integer id) {
+		studentRepo.deleteById(id);
+		
+	}
+
+	@Override
+	public Student getstudent(Integer id) {
+		// TODO Auto-generated method stub
+		Student student = studentRepo.getById(id);
+		
+		return student;
+	}
+
 }

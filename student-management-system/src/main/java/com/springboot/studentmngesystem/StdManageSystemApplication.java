@@ -20,10 +20,12 @@ public class StdManageSystemApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Student student1 = new Student("Tom","Curran","tomcurran@gmail.com");
-		studentRepo.save(student1);
-		
-		Student student2 = new Student("sam","Curran","samcurran@gmail.com");
-		studentRepo.save(student2);
+		/*
+		 * Student student1 = new Student("Tom", "Curran", "tomcurran@gmail.com");
+		 * studentRepo.save(student1);
+		 * 
+		 * Student student2 = new Student("sam", "Curran", "samcurran@gmail.com");
+		 * studentRepo.save(student2);
+		 */
 	}
 }
